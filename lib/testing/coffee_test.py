@@ -19,8 +19,8 @@ class TestCoffee:
         assert isinstance(coffee.name, str)
 
         # uncomment the next two lines if using Exceptions
-        # with pytest.raises(Exception):
-        #     Coffee(2.0)
+        with pytest.raises(Exception):
+            Coffee(2.0)
 
         # uncomment the next two lines if using Exceptions
         # with pytest.raises(Exception):
@@ -31,12 +31,12 @@ class TestCoffee:
         coffee = Coffee("Mocha")
 
         # comment out the next two lines if using Exceptions
-        coffee.name = "Peppermint Mocha"
-        assert coffee.name == "Mocha"
+        # coffee.name = "Peppermint Mocha"
+        # assert coffee.name == "Mocha"
 
         # uncomment the next two lines if using Exceptions
-        # with pytest.raises(Exception):
-        #     coffee.name = "Peppermint Mocha"
+        with pytest.raises(Exception):
+            coffee.name = "Peppermint Mocha"
 
     def test_has_many_orders(self):
         """coffee has many orders"""
